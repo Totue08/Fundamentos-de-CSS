@@ -1,0 +1,41 @@
+/* 
+   Primero aplicamos estilos de arriba hacia abajo en el CSS
+   Después se reemplazan los que llevan una clase
+   Por último se aplican los que llevan un id 
+   nombre < .clase < #id
+   */
+
+nav{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.izquierda{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    gap: 5px;
+}
+
+section{
+    flex: 1;
+}
+
+.contenido{
+    flex: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav-item, main, section, .menu-item, article{
+    border: 1px solid black;
+    padding: 10px;
+}
